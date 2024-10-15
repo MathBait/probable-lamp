@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  reinit:
+    name: Reinitialize Mastory Content Scope from scratch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mastoryberlin/content-action@main
+        with:
+          # scope: ${{ vars.MASTORY_SCOPE }} # defaults to your GitHub user name
+          api_key: ${{ secrets.MASTORY_API_KEY }}
+          reinit: true
