@@ -34,7 +34,7 @@
         {
           "self": {
             "class": "Text",
-            "text": "Hello World!",
+            "text": "Allons-y!",
             "size": "huge",
             "minimal": true
           }
